@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">KilterPlus - For Doctors</string>
+
+    <!-- Welcome Activity -->
+
+    <string name="welcome_activity_heading1">Welcome to Kilter+</string>
+    <string name="welcome_activity_subheading">To connect with hospitals and doctors</string>
+    <string name="logo_content_description">KilterPlus Logo</string>
+    <string name="hospital">Hospital</string>
+    <string name="doctor">Doctor</string>
+
+    <!-- dummy text -->
+    <string name="lorem_ipsum_subtitle">Lorem Ipsum simply dummy text of the printing and
+typesetting industry. Lorem Ipsum</string>
+    <string name="coming_soon_message">Hi, Thanks for onboarding with us. We\'re coming soon.</string>
+
+    <!-- SignUpHospital Activity -->
+
+    <string name="signup_hospital_title">Sign up for Hospital</string>
+    <string name="signup_hospital_subtitle">Find the best hospital nearby your location</string>
+    <string name="edit_text_placeholder_hospital_name"><font size="12">Hospital Name</font></string>
+    <string name="textview_already_have_account">Already have an Account?</string>
+
+    <!-- Common String Resources -->
+
+    <string name="back_button_content_description">Back Button</string>
+    <string name="edit_text_placeholder_email_id"><font size="12">Email Id</font></string>
+    <string name="edit_text_placeholder_phone_number"><font size="12">Phone Number</font></string>
+    <string name="edit_text_placeholder_password"><font size="12">Password</font></string>
+    <string name="facebook">Facebook</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="or">OR</string>
+    <string name="textview_sign_in">Sign In</string>
+    <string name="button_sign_up">Sign Up</string>
+    <string name="checkbox_signin_via_otp">Sign in via OTP</string>
+    <string name="signin_dont_have_an_account">Don\'t have an account?</string>
+    <string name="profile_address">Address</string>
+    <string name="profile_pan">PAN No.</string>
+    <string name="profile_gst">GST No.</string>
+    <string name="profile_speciality">Speciality</string>
+    <string name="voice">Voice</string>
+    <string name="video">Video</string>
+    <string name="chat">Chat</string>
+    <string name="button_continue">Continue</string>
+    <string name="terms_conditions">Agree to Terms and Conditions</string>
+
+    <!-- SignUpDoctor Activity -->
+
+    <string name="signup_doctor_title">Sign up for Doctor</string>
+    <string name="signup_doctor_subtitle">Find the best doctor nearby your location</string>
+    <string name="edit_text_placeholder_doctor_name"><font size="12">Name</font></string>
+
+    <!-- SignInHospital Activity -->
+
+    <string name="signin_hospital_title">Sign in for Hospital</string>
+    <string name="signin_hospital_subtitle">Find the best hospital nearby your location</string>
+
+    <!-- SignInHospital Activity -->
+
+    <string name="signin_doctor_title">Sign in for Doctor</string>
+    <string name="signin_doctor_subtitle">Find the best doctor nearby your location</string>
+
+    <!--DoctorCreateProfile Activity-->
+
+    <string name="activity_doctor_create_profile_title">Create Profile</string>
+    <string name="activity_doctor_create_profile_heading1">Doctors</string>
+    <string name="activity_doctor_create_profile_subheading">Complete the form and create your profile</string>
+    <string name="activity_doctor_create_profile_aadhaar">Aadhaar Number</string>
+    <string name="activity_doctor_create_profile_doctor_reg_number">Doctor Registration Number</string>
+    <string name="activity_doctor_create_profile_qualification">Qualification</string>
+    <string name="activity_doctor_create_profile_experience">Experience</string>
+    <string name="activity_doctor_create_profile_availability">Availability per week</string>
+    <string name="activity_doctor_create_profile_type_consultation">Type of consultation</string>
+
+    <!--Common String Arrays-->
+
+    <string-array name="array_availability">
+        <item>0–10 hours</item>
+        <item>10–20 hours</item>
+        <item>20–30 hours</item>
+        <item>30–40 hours</item>
+        <item>40+ hours</item>
+    </string-array>
+
+    <string-array name="array_hospital_types">
+        <item>Hospital</item>
+        <item>Semi Hospital</item>
+        <item>Clinic</item>
+    </string-array>
+
+    <string-array name="array_doctors_range">
+        <item>0–20</item>
+        <item>20–50</item>
+        <item>50+</item>
+    </string-array>
+
+    <!--HospitalCreateProfile Activity-->
+
+    <string name="activity_hospital_create_profile_title">Create Profile</string>
+    <string name="activity_hospital_create_profile_heading1">Hospitals and Clinics</string>
+    <string name="activity_hospital_create_profile_subheading">Complete the form and create your profile</string>
+    <string name="activity_hospital_create_profile_cin">CIN No.</string>
+    <string name="activity_hospital_create_profile_emergency_available">Emergency Available</string>
+    <string name="activity_hospital_create_profile_emergency_available_yes">Yes</string>
+    <string name="activity_hospital_create_profile_emergency_available_no">No</string>
+    <string name="activity_hospital_create_profile_type">Type</string>
+    <string name="activity_hospital_create_profile_no_of_doctors">No. of Doctors</string>
+
+    <!--Error messages-->
+
+    <string name="onFailureMessage">Failure</string>
+    <string name="something_went_wrong">Something went wrong. Please try again</string>
+    <string name="no_network"><b>No connection</b>\n\nPlease check your internet connectivity\nand try again.</string>
+    <string name="error_invalid_email">Please enter valid email id</string>
+    <string name="error_invalid_phone">Please enter valid phone number</string>
+    <string name="error_invalid_name">Please enter valid name</string>
+    <string name="error_invalid_password">Please enter valid password</string>
+    <string name="error_unauthorized">Email id or password is incorrect.</string>
+    <string name="error_no_consultation_type_selected">Please select at least one type of consultation</string>
+    <string name="error_invalid">Please enter valid" "</string>
+    <string name="error_select">Please select" "</string>
+    <string name="error_unauthenticated">Please sign in again</string>
+
+    <!--Facebook-->
+    <string name="facebook_app_id">1852889894780995</string>
+    <string name="fb_login_protocol_scheme">fb1852889894780995</string>
+    <string name="fb_cancelled">Cancelled</string>
+
+</resources>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.appening.kilterplus_fordoctors.activity.DoctorCreateProfileActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="16dp">
+
+        <EditText
+            android:id="@+id/editTextName"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/edit_text_placeholder_doctor_name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/edit_text_placeholder_email_id"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/edit_text_placeholder_phone_number"
+            android:inputType="phone"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="@string/activity_doctor_create_profile_subheading"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/smallestTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Heading1Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/activity_doctor_create_profile_heading1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/heading1TextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/profile_address"
+            android:inputType="textPostalAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+        <EditText
+            android:id="@+id/editTextAadhaar"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/activity_doctor_create_profile_aadhaar"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAddress" />
+
+        <EditText
+            android:id="@+id/editTextDocRegNo"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/activity_doctor_create_profile_doctor_reg_number"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAadhaar" />
+
+        <EditText
+            android:id="@+id/editTextPan"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/profile_pan"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/editTextGST"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDocRegNo" />
+
+        <EditText
+            android:id="@+id/editTextGST"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/profile_gst"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextPan"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDocRegNo" />
+
+        <xyz.appening.kilterplus_fordoctors.custom.CustomSpinner
+            android:id="@+id/spinnerQualification"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPan"
+            app:ms_hint="@string/activity_doctor_create_profile_qualification"
+            app:ms_hintColor="?android:textColorHint" />
+
+        <xyz.appening.kilterplus_fordoctors.custom.CustomSpinner
+            android:id="@+id/spinnerSpeciality"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerQualification"
+            app:ms_hint="@string/profile_speciality"
+            app:ms_hintColor="?android:textColorHint" />
+
+        <xyz.appening.kilterplus_fordoctors.custom.CustomSpinner
+            android:id="@+id/spinnerExperience"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_bg"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerAvailability"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSpeciality"
+            app:ms_hint="@string/activity_doctor_create_profile_experience"
+            app:ms_hintColor="?android:textColorHint" />
+
+        <xyz.appening.kilterplus_fordoctors.custom.CustomSpinner
+            android:id="@+id/spinnerAvailability"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/spinnerExperience"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSpeciality"
+            app:ms_hint="@string/activity_doctor_create_profile_availability"
+            app:ms_hintColor="?android:attr/textColorHint" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:text="@string/activity_doctor_create_profile_type_consultation"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/smallestTextSize"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBoxVideo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxVideo" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkBoxVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/video"
+            android:textAllCaps="true"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/smallestTextSize"
+            app:buttonTint="@color/colorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/checkBoxVoice"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerAvailability" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkBoxVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/voice"
+            android:textAllCaps="true"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/smallestTextSize"
+            app:buttonTint="@color/colorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/checkBoxChat"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxVideo"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerAvailability" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkBoxChat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/chat"
+            android:textAllCaps="true"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/smallestTextSize"
+            app:buttonTint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxVoice"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerAvailability" />
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_large_height"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onContinueClick"
+            android:text="@string/button_continue"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxChat" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

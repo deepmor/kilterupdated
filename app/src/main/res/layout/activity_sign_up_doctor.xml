@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="16dp"
+        tools:context="xyz.appening.kilterplus_fordoctors.activity.SignUpHospitalActivity">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="28dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/back_button_content_description"
+            android:onClick="onDoctorSignUpBackClick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Heading1Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/signup_doctor_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/heading1TextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ic_back" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/signup_doctor_subtitle"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/smallestTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/buttonFb"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/color_facebook"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_facebook_logo"
+            android:onClick="onFacebookLoginClick"
+            android:paddingEnd="15dp"
+            android:paddingStart="24dp"
+            android:text="@string/facebook"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/smallestTextSize"
+            app:layout_constraintEnd_toStartOf="@+id/buttonIn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/buttonIn"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/color_linkedin"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/ic_linkedin_logo"
+            android:onClick="onLinkedInLoginClick"
+            android:paddingEnd="15dp"
+            android:paddingStart="24dp"
+            android:text="@string/linkedin"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/smallestTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonFb"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/or"
+            android:textColor="@color/colorGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFb" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/edit_text_placeholder_doctor_name"
+            android:inputType="textPersonName"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/edit_text_placeholder_email_id"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/edit_text_placeholder_phone_number"
+            android:inputType="phone"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/edit_text_placeholder_password"
+            android:inputType="textPassword"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+        <Button
+            android:id="@+id/buttonDoctorSignUp"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onDoctorSignUpClick"
+            android:text="@string/button_sign_up"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/textview_already_have_account"
+            android:textColor="@color/colorLightGrey"
+            android:textSize="@dimen/smallestTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDoctorSignUp" />
+
+        <TextView
+            android:id="@+id/textViewSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onDoctorSignInClick"
+            android:padding="16dp"
+            android:text="@string/textview_sign_in"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallestTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="16dp"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/smallestTextSize"
+            app:buttonTint="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

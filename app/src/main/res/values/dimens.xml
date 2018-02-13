@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heading1TextSize">20sp</dimen>
+    <dimen name="smallestTextSize">12sp</dimen>
+    <dimen name="heading2TextSize">16sp</dimen>
+    <dimen name="edit_text_height">45dp</dimen>
+    <dimen name="edit_text_hint_padding">15dp</dimen>
+    <dimen name="button_large_height">55dp</dimen>
+</resources>

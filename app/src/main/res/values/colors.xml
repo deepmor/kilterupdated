@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18d67a</color>
+    <color name="colorPrimaryDark">#0ec16a</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGrey">#5e5e5e</color>
+    <color name="colorLighterGrey">#eeeeee</color>
+    <color name="colorLightestGrey">#ececec</color>
+    <color name="colorLightGrey">#aaaaaa</color>
+    <color name="color_facebook">#445fa2</color>
+    <color name="color_linkedin">#007aaa</color>
+</resources>

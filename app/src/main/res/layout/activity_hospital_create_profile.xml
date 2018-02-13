@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.appening.kilterplus_fordoctors.activity.HospitalCreateProfileActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:text="@string/activity_hospital_create_profile_emergency_available"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/smallestTextSize"
+            app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+
+        <EditText
+            android:id="@+id/editTextGST"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/profile_gst"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPan" />
+
+        <EditText
+            android:id="@+id/editTextPan"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/profile_pan"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextCIN"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAddress" />
+
+        <EditText
+            android:id="@+id/editTextCIN"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/activity_hospital_create_profile_cin"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/editTextPan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAddress" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/profile_address"
+            android:inputType="textPostalAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/edit_text_placeholder_hospital_name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/edit_text_placeholder_email_id"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            style="@style/StyleEditText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/edit_text_placeholder_phone_number"
+            android:inputType="phone"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="@string/activity_hospital_create_profile_subheading"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/smallestTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Heading1Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/activity_hospital_create_profile_heading1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/heading1TextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <xyz.appening.kilterplus_fordoctors.custom.CustomSpinner
+            android:id="@+id/spinnerHospitalType"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_bg"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerNoOfDoctors"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextGST"
+            app:ms_hint="@string/activity_hospital_create_profile_type"
+            app:ms_hintColor="?android:textColorHint" />
+
+        <xyz.appening.kilterplus_fordoctors.custom.CustomSpinner
+            android:id="@+id/spinnerNoOfDoctors"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/spinnerHospitalType"
+            app:layout_constraintTop_toBottomOf="@+id/editTextGST"
+            app:ms_hint="@string/activity_hospital_create_profile_no_of_doctors"
+            app:ms_hintColor="?android:textColorHint" />
+
+        <xyz.appening.kilterplus_fordoctors.custom.CustomSpinner
+            android:id="@+id/spinnerSpeciality"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerNoOfDoctors"
+            app:ms_hint="@string/profile_speciality"
+            app:ms_hintColor="?android:textColorHint" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSpeciality">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radioButtonYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/activity_hospital_create_profile_emergency_available_yes"
+                android:textAllCaps="true"
+                android:textColor="?android:attr/textColorHint"
+                android:textSize="@dimen/smallestTextSize"
+                app:buttonTint="@color/colorPrimary" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radioButtonNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_hospital_create_profile_emergency_available_no"
+                android:textAllCaps="true"
+                android:textColor="?android:attr/textColorHint"
+                android:textSize="@dimen/smallestTextSize"
+                app:buttonTint="@color/colorPrimary" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_large_height"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onContinueClick"
+            android:text="@string/button_continue"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
