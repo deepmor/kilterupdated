@@ -1,13 +1,18 @@
 package xyz.appening.kilterplus_fordoctors.activity;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatCheckBox;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +34,8 @@ import com.linkedin.platform.listeners.AuthListener;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Collections;
 
 import butterknife.BindView;
@@ -58,6 +65,20 @@ public class SignInDoctorActivity extends AppCompatActivity implements AppCompat
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        MessageDigest md = null;
+        try {
+            @SuppressLint("PackageManagerGetSignatures") PackageInfo info = getPackageManager().getPackageInfo(
+                    getPackageName(),
+                    PackageManager.GET_SIGNATURES);
+            for (Signature signature : info.signatures) {
+                md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+            }
+        } catch (PackageManager.NameNotFoundException | NoSuchAlgorithmException ignored) {
+
+        }
+        assert md != null;
+        Log.i("EbBmOzuw9V8E0EK99eb5bKdzPJc= = ", Base64.encodeToString(md.digest(), Base64.DEFAULT));
         setContentView(R.layout.activity_sign_in_doctor);
         ButterKnife.bind(this);
         checkBox.setOnCheckedChangeListener(this);
@@ -280,9 +301,9 @@ public class SignInDoctorActivity extends AppCompatActivity implements AppCompat
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
-        LISessionManager.getInstance(getApplicationContext())
-                .onActivityResult(this,
-                        requestCode, resultCode, data);
+        //LISessionManager.getInstance(getApplicationContext())
+                //.onActivityResult(this,
+
     }
 
     private void saveToken(String token, SignInResponse.User user){

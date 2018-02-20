@@ -25,6 +25,8 @@ import xyz.appening.kilterplus_fordoctors.api.helper.ServiceGenerator;
 import xyz.appening.kilterplus_fordoctors.api.helper.ServiceInterface;
 import xyz.appening.kilterplus_fordoctors.api.model.SignInResponse;
 import xyz.appening.kilterplus_fordoctors.utils.Common;
+import com.onesignal.OneSignal;
+
 
 public class SignInHospitalActivity extends AppCompatActivity implements AppCompatCheckBox.OnCheckedChangeListener {
 
